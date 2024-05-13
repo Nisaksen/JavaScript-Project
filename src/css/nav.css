@@ -1,0 +1,43 @@
+nav,
+#menu-checkbox {
+  display: none;
+}
+
+#menu-checkbox:checked ~ nav {
+  display: block;
+}
+
+header {
+  position: relative;
+  background: rgb(83, 83, 83); 
+  color: #fff;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+nav {
+  position: absolute;
+  background: rgb(83, 83, 83); 
+  left: 0px;
+}
+
+nav a {
+  display: block;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+@media (min-width: 600px) {
+  nav {
+    display: block;
+    position: static;
+  }
+
+  .hamburger-icon {
+    display: none;
+  }
+  nav a {
+    display: inline-block;
+  }
+}

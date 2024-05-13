@@ -4,16 +4,9 @@
 /* These are marked with an underscore: */
 @import url("./_variables.css");
 /* Feel free to add as many of these imports as you need */
+@import url(./nav.css);
 
 body {
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
+  font-family: "open sans", Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.centered {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
