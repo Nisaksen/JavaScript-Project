@@ -6,7 +6,10 @@
 /* Feel free to add as many of these imports as you need */
 @import url(./nav.css);
 
+
 body {
   font-family: "open sans", Verdana, Geneva, Tahoma, sans-serif;
+  background-color: black;
+  color: white;
 }
 
