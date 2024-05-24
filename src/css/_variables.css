@@ -2,6 +2,13 @@
 /* This could be colors, fonts, or padding sizes! */
 
 :root {
-  --color-primary: #7be447;
-  --color-secondary: #1f1f1f;
+  --color-primary: #6C00D9;
+  --color-secondary: #404040;
+  --color-tertiary:#3C0178;
+}
+
+body{
+  display: grid;
+  grid-gap: 1em;
+  
 }
