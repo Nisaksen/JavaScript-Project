@@ -8,86 +8,124 @@
   <title>SquareEyes</title>
   <link href="src/css/styles.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <header>
-    <div>
-      <img class="nav_logo" src="assets/images/SquareEyes_Logo11.png" alt="picture of the website logo">
-    </div>
-    
-     <!-- class="hamburger-center">  -->
-     <input type="checkbox" id="menu-checkbox" />
-      <label for="menu-checkbox">
-       <!-- class="hamburger-icon"> -->
-        <i class="fas fa-bars"></i></label>
-    
+  <div class="wrapper">
+    <header>
       
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="movies.html">Movies</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="about-us.html">About Us</a>
-        <a href="contact.html">Recomend a movie</a>
-      </nav>
-     
+      <img class="nav_logo" src="assets/images/SquareEyes_Logo11.png" alt="picture of the website logo">
+    
+      <input type="checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
+
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="movies.html">Movies</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="about-us.html">About Us</a>
+          <a href="contact.html">Recomend a movie</a>
+        </nav>
+    </header>
+
+
+    <div class="logo-center"> 
+      <div><img class="logo" src="assets/images/SquareEyes_Logo11.png" alt="picture of the website logo"></div>
+    </div>
   
-  </header>
-  <div class="logo-center"> <div>
-    <img class="logo" src="assets/images/SquareEyes_Logo11.png" alt="picture of the website logo">
-  </div></div>
- 
-  <!--her har jeg begynnt å planlegge hvor koden skal være og hva, må importere bilde assetsene og lage footer-->
-  <main>
    
-
-    <section>
-      <!--front content cards 1 and 2 with buttons-->
-      <div class="contentcard1"></div>
-      <div class="contentcard2"></div>
-    </section>
-
-
-
-    <section>
-    <!--
-      searchbar
-    -->
-  </section>
-  <section>
-     <!--contentcards og buttons-->
-    <img class="contentcard_front" src="assets/images/Godzilla_2.jpg" alt="Godzilla movie">
-    <img class="contentcard_front" src="assets/images/Toystory_8.jpg" alt="toystory 4 movie">
-    <img class="contentcard_front" src="assets/images/Batman_7.jpg" alt="Batman movie">
-    <img class="contentcard_front" src="assets/images/Scream_4.jpg" alt="scream movie">
+    
+<!-----------------front content cards 1 and 2 with buttons--------------->
+      <section>
+        <div class="contentcard1"></div>
+        <div class="contentcard2"></div>
+      </section>
+<!-----------------front content cards 1 and 2 with buttons--------------->
 
 
-   
+      <section>
+      <!--
+        searchbar
+      -->
+      </section>
+        <!--------------------------------contentcards og buttons------------------>
+      <section>
 
-  </section>
-  </main>
-</body> 
-<footer>
-  <div class="container">
-    <div class="footer-content">
-      <img src="assets/images/SquareEyes_Logo_mindre11.jpg" alt="picture of logo">
-    </div>
-    <div class="footer-content">
-      <h3>Quick lLinks</h3>
-        <ul class="list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about-us.html">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="contact.html">Recomend a movie</a></li>
-          <li>Follow Us</li>
-        </ul>
-    </div>
-    <div class="footer-content">
-      <h3>Newsletter</h3>
-      <p>Sign to our newsletter for movie recommendations, special offers and more!</p>
-      <!--legge inn en liten mail signup-->
-    </div>
+        <div class="card-container">
+          <div class="card">
+            <img src="assets/images/Godzilla_2.jpg" alt="godzilla moviecard" class="card-img">
+            <div class="content-card">
+              <h2 class="card-title">Godzilla: The king of monsters</h2>
+              <p class="card-description">Godzilla: King of the Monsters is an action-packed monster film that follows the story of....</p>
+              <a href="#" class="card-button">More...</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/Toystory_8.jpg" alt="toy story moviecard" class="card-img">
+            <div class="content-card">
+              <h2 class="card-title">Toy Story 4</h2>
+              <p class="card-description">When a new toy called "Forky" joins Woody and the gang, a road trip alongside old and ...</p>
+              <a href="#" class="card-button">More...</a>
+            </div>
+          </div>
+        </div>
 
+
+      <!--contentcards og buttons-->
+      <img class="contentcard_front" src="assets/images/Godzilla_2.jpg" alt="Godzilla movie">
+      <img class="contentcard_front" src="assets/images/Toystory_8.jpg" alt="toystory 4 movie">
+      <img class="contentcard_front" src="assets/images/Batman_7.jpg" alt="Batman movie">
+      <img class="contentcard_front" src="assets/images/Scream_4.jpg" alt="scream movie">
+      
+      </section>
+    </main>
+  <!-----------------------------------------------footer ---------------------------------------------------->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-md-6 square">
+            <div class="footer-content-logo">
+              <img src="assets/images/SquareEyes_Logo_mindre11.jpg" alt="picture of logo">
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 square">
+            <div class="footer-content-links">
+              <h3>Quick Links</h3>
+                <ul class="list">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about-us.html">About Us</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="contact.html">Recomend a movie</a></li>
+                </ul>
+            </div>
+          </div> 
+
+          <div class="col-lg-2 col-md-6 square">
+            <div class="footer-content-follow-us"> 
+              <h3>Follow Us</h3>
+              <ul class="social-list">
+              <li><a href="#"><i class="fa-brands fa-square-instagram" style="color: #74C0FC;"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-tiktok" style="color: #74C0FC;"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-twitter" style="color: #74C0FC;"></i></a></li>
+              </ul>
+            </div>
+          </div> 
+
+          <div class="col-lg-2 col-md-6 square">
+            <div class="footer-content-newsletter">
+              <h3>Newsletter</h3>
+              <p class="newsletter-text">Sign to our newsletter for movie recommendations, special offers and more!</p>
+            <!--legge inn en liten mail signup-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
-</footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>

@@ -7,11 +7,24 @@
 
 
 
-body {
+html, body {
+  height: 100%;
+  margin: 0;
   font-family: "open sans", Verdana, Geneva, Tahoma, sans-serif;
   background-color: black;
   color: white;
 }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
 .logo {
  width: 500px;
 
@@ -26,77 +39,136 @@ body {
 
 /*---------------NAV BAR---------------------------------------*/
 
-header {
-  background-color: aqua;
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-  
-
-}
 .nav_logo {
   height: 40px;
 }
 
-nav {
-  display: none;
-}
-
-
-/* nav {
-  background-color: bisque;
-  width: 30em;
-  height: 2em;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-}
-
-
-
+nav, 
 #menu-checkbox {
   display: none;
+  
+}
+
+#menu-checkbox:checked ~ nav {
+  display: block;
+  right: 0;
+  top: 100%;
+}
+
+header {
+  background-color: #404040;
+  display:flex;
+  justify-content: space-between;
+  position: relative;
+ font-size: 1.5rem;
+
+}
+
+nav {
+  position: absolute;
+  background: #404040;
+  right: 0;
+  top: 100%;
+  
+  
 }
 
 nav a {
- text-decoration: none;
-} */
+  display: block;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-align: center;
+ 
+}
 
-@media (min-width: 600px) {
-  header {
-    display: flex;
-    justify-items: center;
-
-  }
+@media (min-width: 750px) {
   nav {
-    display: flex;
+    display: block;
     position: static;
-    justify-self: left;
-    background-color: bisque;
-     }
-
+  }
   .hamburger-icon {
     display: none;
   }
+
   nav a {
     display: inline-block;
   }
-
-  label {
-    justify-self: left;
-    background-color: aquamarine;
-  }
-  
-.hamburger-center {
-  background-color: lightblue;
 }
+/*-------------------------- Navbar----------------------- */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
 }
 
+.card {
+  background-color: var(--color-secondary);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  margin: 20px;
+  max-width: 262px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.content-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 24px;
+  margin: 10px 10px 10px 10px;
+}
+
+.card-description {
+  font-size: 16px;
+  color: #fff;
+  margin: 10px 10px 10px 10px;
+  flex-grow: 1;
+}
+
+.card-button {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  padding: 10px 20px;
+  /* margin: 10px 10px 10px 10px; */
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: auto;
+  align-self: flex-end;
+}
+
+.card-button:hover {
+  background-color: var(--color-tertiary);
+}
+
+
+
+
+
+
+/* -------------------contentcard background -----------------*/
 
 .contentcard1 {
-  width: 1236px;
-  height: 600px;
+  max-width: 1236px;
+  max-height: 600px;
   border-radius: 20px;
   background-image: url(/assets/images/sweetheart_card.png);
   background-size: cover;
@@ -105,8 +177,8 @@ nav a {
   
 }
 .contentcard2 {
-  width: 1236px;
-  height: 600px;
+  max-width: 1236px;
+  max-height: 600px;
   border-radius: 20px;
   background-image: url(/assets/images/tyson-moultrie-BQTHOGNHo08-unsplash_movie_posters.jpg);
   background-size: cover;
@@ -114,3 +186,205 @@ nav a {
   background-position: center;
   
 }
+
+
+/* -------------------contentcard background -----------------*/
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------Footer----------------------------- */
+.container {
+  /* position: relative; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background: #404040;
+  padding-top: 50px;
+  padding: 20px 0 20px 0;
+ 
+}
+
+.square {
+  width: 100%;
+  height: auto;
+  margin-top: 48px;
+  padding: 0px !important;
+  padding-bottom: 20px;
+}
+
+.footer-content-logo img {
+  /* flex: 1; */
+  width: 85%;
+
+}
+
+h3 {
+  margin-top: 20px;
+  font-size: 38px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  margin: 5px 0;
+}
+
+.list a {
+  color: white;
+  text-decoration: none;
+}
+
+.list a:hover {
+  text-decoration: underline;
+}
+
+
+.social-list {
+  display:flex;
+  padding: 0;
+  justify-content: start;
+  list-style: none;
+  margin: 0;
+}
+
+.social-list li {
+  margin: 0px 10px;
+}
+
+
+.newsletter-text {
+  max-width: 80%;
+  margin-top: 10px;
+}
+@media  (min-width:750px) {
+  .heading {
+    text-align: left;
+  }
+  .square {
+    padding: 0px 30px !important;
+    margin-top: 10px !important;
+  }
+  .list li, .social-list li, .newsletter-text {
+    text-align: center;
+  }
+}
+/* .footer-content {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+} */
+/* 
+.social-list li a {
+  display: inline-block;
+  text-align: left;
+  margin: 5px 0px ;
+  color: white;
+} */
+/* .list li a {
+  display: inline-block;
+  text-align: left;
+  margin: 5px 0px ;
+  color: white;
+} */
+/* .footer-content-newsletter {
+  flex: 1;
+} */
+
+/* .footer-content-links,
+.footer-content-follow-us {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center; */
+
+/* } */
+/* 
+.footer-content-links, .list {
+  list-style: none;
+}
+
+.footer-content-newsletter {
+  flex: 1;
+}
+
+.footer-content h3 {
+  margin-bottom: 10px;
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-content ul li {
+  margin: 5px 0;
+}
+
+.footer-content ul li a {
+  list-style: none;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-content ul li a:hover {
+  text-decoration: underline; */
+/* } */
+
+/* .social-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+} */
+
+/* .social-list li {
+  list-style: none;
+  margin: 0 10px;
+} */
+
+/* Responsive design */
+/* @media (max-width: 750px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-content-links,
+  .footer-content-follow-us {
+    order: 1;
+  }
+  
+  .footer-content-logo {
+    order: 0;
+  }
+  
+  .footer-content-newsletter {
+    order: 2;
+  }
+} */
+/*---------------------------Footer----------------------------- */
+/*---------------------------Contentcards----------------------------- */
+
