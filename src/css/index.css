@@ -1,0 +1,226 @@
+
+
+
+
+
+
+/* -------------------contentcard background -----------------*/
+
+
+.banner {
+  width: 100%;
+  max-width: 1236px;
+  height: 600px;
+  min-height: 300;
+  border-radius: 20px;
+  background-image: url(/assets/images/sweetheart_card.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0px auto;
+
+
+}
+.banner2 {
+    width: 100%;
+    max-width: 1236px;
+    height: 600px;
+    min-height: 300;
+    border-radius: 20px;
+    background-image: url(/assets/images/tyson-moultrie-BQTHOGNHo08-unsplash_movie_posters.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* Banner content */
+.banner-content {
+  max-width: 800px; 
+  margin-left: 20px;
+  box-shadow: rgba(0, 0, 0, 5);
+
+ 
+}
+
+.banner  h1 {
+  font-size: 3em;
+  max-width: 500px;
+}
+
+.banner p {
+  font-size: 1.2em;
+  max-width: 400px;
+}
+.banner2  h1 {
+    font-size: 3em;
+    max-width: 500px;
+    margin-right: 30px;
+    margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 5);
+  }
+  
+.banner2 p {
+    font-size: 1.2em;
+    max-width: 400px;
+}
+
+.card-button {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: auto;
+    align-self: flex-end;
+  }
+  
+  .card-button:hover {
+    background-color: var(--color-tertiary);
+  }
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .banner {
+    max-width: 800px;
+    margin: 0px auto; 
+  }
+
+  .banner2 {
+    max-width: 800px;
+    margin: 0px auto; 
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 400px;
+   
+  }
+  .banner h1 {
+    font-size: 2em;
+   
+  }
+  .banner p {
+    font-size: 1em; 
+  }
+
+  .banner2 {
+    height: 400px;
+    
+  }
+  .banner2 h1 {
+    font-size: 2em;
+    
+  }
+  .banner2 p {
+    font-size: 1em; 
+  }
+}
+
+@media (max-width: 500px) {
+  .banner {
+    height: 300px; 
+  }
+  .banner h1 {
+    font-size: 1.5em;
+    max-width: 200px;
+    
+  }
+  .banner p {
+    font-size: 0.9em; 
+    max-width: 150px;
+  }
+
+  .banner2 {
+    height: 300px; 
+  }
+
+  .banner2 h1 {
+    font-size: 1.5em;
+    max-width: 250px;
+    margin-right: 70px;
+    
+  }
+  .banner2 p {
+    font-size: 0.9em; 
+    max-width: 150px;
+  }
+}
+
+
+
+
+
+
+
+/* -------------------contentcard background -----------------*/
+
+
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: var(--color-secondary);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    margin: 20px;
+    max-width: 262px;
+    overflow: hidden;
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  .content-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 24px;
+    margin: 10px 10px 10px 10px;
+  }
+  
+  .card-description {
+    font-size: 16px;
+    color: #fff;
+    margin: 10px 10px 10px 10px;
+    flex-grow: 1;
+  }
+  
+  .card-button {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: auto;
+    align-self: flex-end;
+  }
+  
+  .card-button:hover {
+    background-color: var(--color-tertiary);
+  }
+  

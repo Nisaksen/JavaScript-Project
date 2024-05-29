@@ -7,12 +7,12 @@
 
 
 
-body {
+/* body {
   font-family: "open sans", Verdana, Geneva, Tahoma, sans-serif;
   background-color: black;
   color: white;
 }
-/*---------------NAV BAR---------------------------------------*/
+---------------NAV BAR---------------------------------------
 nav,
 #menu-checkbox {
   display: none;
@@ -26,10 +26,10 @@ header {
   position: relative;
   background: rgb(83, 83, 83); 
   color: #fff;
-  /* padding: 10px; */
+  padding: 10px;
   font-size: 1.5rem;
-  /* background-color: blue; */
-  /* height: 2em ;  */
+  background-color: blue; 
+  height: 2em ; 
   display: flex;
   justify-content: center;
 }
@@ -80,7 +80,7 @@ nav a {
   background-color: lightblue;
 }
 }
-/*------------NAV BAR END--------------------------------------*/
+ ------------NAV BAR END--------------------------------------
 
 .logo {
   width: 652px;
@@ -145,4 +145,4 @@ h3 {
 
 .list li::before {
 
-}
+} */
