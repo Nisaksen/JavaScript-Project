@@ -4,10 +4,83 @@
 
 
 
+/* ----------------------searchbar -------------------*/
+
+.search-container {
+  display: flex;
+  align-items: center;
+  
+  max-width: 600px;
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 50px auto;
+  background-color: var(--color-secondary);
+  height: 50px;
+
+}
+
+.menu{
+  width: 65%;
+  display: flex;
+  justify-content: left;
+  margin-left: 50px;
+  color: #fff;
+
+}
+
+.menu a {
+  color: #fff;
+}
+form {
+  position: relative;
+}
+
+#search-bar {
+  border: none;
+  outline: none;
+  padding: 7px 15px;
+  font-size: 16px;
+  flex-grow: 1;
+  max-width: 200px;
+  border-radius: 20px;
+  
+  background-color: rgb(43, 41, 48);
+  align-items: right;
+  display: block;
+  margin-right: 2px;
+  margin-left: 5px;
+}
+
+#search-button {
+  
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: none;
+  margin-right: 30px;
+}
+
+#search-button:hover {
+  background-color: var(--color-tertiary);
+}
+/* put in a when clicked effect here on button */
 
 
+@media (max-width:500px) {
+  .menu {
+    margin-left: 12px;
+    font-size: 0.9rem;
+  }
+  #search-button {
+    margin-right: 12px;
+  }
+}
 
-
+/* ----------------------searchbar -------------------*/
 
 
 .card-container {
