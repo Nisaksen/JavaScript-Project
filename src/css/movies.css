@@ -198,3 +198,23 @@ form {
   padding: 30px 0px;
 }
 
+.buttons a {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: auto;
+  align-self: flex-end;
+}
+
+.card-button-view {
+  border: 2px solid #ddd;
+
+}
+
+.buttons a:hover {
+  background-color: var(--color-tertiary);
+}
