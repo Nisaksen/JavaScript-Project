@@ -32,6 +32,7 @@ p {
 }
 
 h2 {
+    font-size: 48px;
     text-align: center;
     padding: 30px;
 }
@@ -87,6 +88,8 @@ button {
     color: #fff;
     font-size: 16px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
     margin: 30px auto;
 }
 
