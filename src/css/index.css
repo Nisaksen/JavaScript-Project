@@ -46,22 +46,26 @@ main {
 
 .banner-content {
   max-width: 800px; 
-  margin-left: 20px;
+  margin-left: 30px;
   margin-top: 30px;
+  margin-right: auto;
   box-shadow: rgba(0, 0, 0, 5);
-
- 
+  justify-content: space-around;
+  
 }
 
 .banner  h1, .banner2 h1 {
   font-size: 3em;
   max-width: 500px;
-  margin-top: 30px;
+  margin-bottom: 20px;
+  text-shadow: 20px 20px 20px black;
+  
 }
 
 .banner p, .banner2 p {
   font-size: 1.2em;
   max-width: 400px;
+  margin-bottom: 20px;
 }
 
 
@@ -213,12 +217,20 @@ form {
 
 /* ----------------------contentcards movies--------------------- */
 .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1240px;
+  margin: 0 auto;
+  
+}
+/* .card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* padding: 20px; */
+    padding: 20px;
   }
-  
+   */
   .card, .card-more {
     background-color: var(--color-secondary);
     border-radius: 8px;
@@ -237,14 +249,21 @@ form {
     width: 100%;
     max-height: 388px;
     object-fit: cover;
+    min-height: 388px;
   }
   
   .content-card {
     display: flex;
+    flex-direction: column;
+    padding: 20px;
+    flex-grow: 1;
+  }
+  /* .content-card {
+    display: flex;
     flex-direction: row;
     padding: 20px;
   }
-  
+   */
   .card-title {
     font-size: 24px;
     margin: 10px 10px 10px 10px;
@@ -253,10 +272,24 @@ form {
   .card-description {
     font-size: 16px;
     color: #fff;
-    margin: 10px 10px 10px 10px;
+    /* margin: 10px 10px 10px 10px; */
     flex-grow: 1;
+    position: relative;
   }
 
+  .categories {
+    flex-grow: 1; 
+  }
+
+  .price {
+    padding: 15px 0;
+  }
+
+  .card-description, .price, .categories {
+    opacity: 0.8;
+    margin: 5px 10px 5px 10px;
+
+  }
   .card-more {
     opacity: 0.3;
   }
@@ -267,7 +300,7 @@ form {
   
   .buttons a {
     display: inline-block;
-    background-color: var(--color-primary);
+    /* background-color: var(--color-primary); */
     color: #ffffff;
     padding: 10px 20px;
     border-radius: 20px;
@@ -276,20 +309,25 @@ form {
     margin-left: auto;
     align-self: flex-end;
   }
-  
-  .card-button-view {
-    border: 2px solid #ddd;
 
-  }
+  .card-button-buy {
+  background-color: var(--color-primary);
+}
+
+.card-button-view {
+  border: 2px solid #dddddda8;
+  background-color: var(--color-tertiary);
+
+}
   
   .buttons a:hover {
     background-color: var(--color-tertiary);
   }
   
-  @media (max-width: 750px) {
+  /* @media (max-width: 750px) {
     .card, .card-more {
         max-width: 182px;
-        /* margin: 8px; */
+        
     }
     .card-title {
         font-size: 20px;
@@ -298,4 +336,83 @@ form {
     .card-description {
         font-size: 14px;
     }
+  } */
+  @media (max-width: 1310px) {
+    #batman {
+      display: none;
+    }
+    
   }
+  @media (max-width: 1007px) {
+    #toystory {
+      display: none;
+    }
+    
+  }
+
+  
+  @media (max-width: 1066px) {
+    .card {
+      margin: 20px;
+    }
+    .card-title, .categories, .card-description, .price {
+      margin: 5px 2px;
+    }
+    .card-title {
+        font-size: 20px;
+        
+    }
+    
+  }
+
+  @media (max-width: 780px) {
+    .card {
+        margin: 20px;
+    }
+    
+  }
+
+  @media (max-width: 705px) {
+    .card {
+        max-width: 182px;
+        margin: 20px;
+    }
+    .card-title {
+        font-size: 20px;
+        margin: 2px;
+    }
+    .card-description {
+        display: none;
+    }
+    .content-card {
+      min-height: 205px;
+      padding: 15px;
+    }
+
+    .buttons a {
+      font-size: 14px;
+    }
+
+    .card-img {
+      max-height: 274px;
+      min-height: 274px;
+    }
+  }
+
+  @media (max-width: 544px) {
+    .card {
+        max-width: 182px;
+        margin: 20px 10px;
+    }
+    .card-title {
+        font-size: 18px;
+        margin: 2px;
+    }
+    .card-description {
+        display: none;
+    }
+    main {
+      margin: 10px;
+    }
+  }
+

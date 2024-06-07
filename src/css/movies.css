@@ -117,8 +117,6 @@ form {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    /* min-height: 305px; */
-    /* min-height: 375px; */
     flex-grow: 1;
   }
   
@@ -130,16 +128,12 @@ form {
   .card-description {
     font-size: 16px;
     color: #fff;
-    /* margin: 10px 10px 10px 10px; */
     flex-grow: 1;
     position: relative;
-    
-
   }
 
   .categories {
-    flex-grow: 1;
-    
+    flex-grow: 1; 
   }
 
   .price {
