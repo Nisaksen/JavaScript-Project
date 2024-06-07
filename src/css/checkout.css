@@ -11,10 +11,12 @@ main {
 }
 
 .preview-row  {
-    display: flex;
+    /* display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
-    max-width: 1400px;
+    justify-content: space-around; */
+    /* max-width: 1400px; */
+    display: grid;
+
   }
 
   h2 {
@@ -76,7 +78,7 @@ button {
     cursor: pointer;
     display: flex;
     justify-content: center;
-    margin: 30px auto;
+    /* margin: 30px auto; */
 }
 
 button:hover {

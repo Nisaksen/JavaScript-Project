@@ -1,9 +1,18 @@
-
+main {
+  box-sizing: border-box;
+  margin: 100px;
+  margin-top: 200px;
+  margin-bottom: 300px;
+}
 
 
 .content{
     
-  margin-top: 70px;
+  margin-top: 70px 70px;
+  align-content: center;
+  justify-content: center;
+
+
 }
 .checkout {
   font-size: 48px;
@@ -20,22 +29,34 @@
 }
 
 .button {
-  margin: 0 auto;
+ display: flex;
+ justify-content: center;
 }
   
-  .watch-button {
-    display: inline-block;
-    background-color: var(--color-primary);
-    color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 20px;
-    text-decoration: none;
-    font-size: 16px;
-    margin-left: auto;
-    align-self: flex-end;
-  }
+.watch-button {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  align-self: flex-end;
+  /* margin: 30px auto; */
+}
     
   
-    .button a:hover {
-      background-color: var(--color-tertiary);
-    }
+.button a:hover {
+  background-color: var(--color-tertiary);
+ }
+
+ @media (max-width: 768px) {
+  main {
+    margin: 50px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+  }
+  .checkout {
+    font-size: 32px;
+  }
+ }
