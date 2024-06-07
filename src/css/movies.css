@@ -13,7 +13,7 @@
   border: 2px solid #ddd;
   border-radius: 15px;
   overflow: hidden;
-  margin: 50px auto;
+  margin: 100px auto;
   background-color: var(--color-secondary);
   height: 50px;
 
@@ -88,8 +88,6 @@ form {
     justify-content: center;
     max-width: 1240px;
     margin: 0 auto;
- 
-
     
   }
   
@@ -112,12 +110,16 @@ form {
     width: 100%;
     max-height: 388px;
     object-fit: cover;
+    min-height: 388px;
   }
   
   .content-card {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    /* min-height: 305px; */
+    /* min-height: 375px; */
+    flex-grow: 1;
   }
   
   .card-title {
@@ -128,79 +130,33 @@ form {
   .card-description {
     font-size: 16px;
     color: #fff;
-    margin: 10px 10px 10px 10px;
+    /* margin: 10px 10px 10px 10px; */
     flex-grow: 1;
     position: relative;
+    
 
   }
-  
-  .card-button {
-    display: inline-block;
-    background-color: var(--color-primary);
-    color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 4px;
-    text-decoration: none;
-    font-size: 16px;
-    margin-left: auto;
-    align-self: flex-end;
-  }
-  
-  .card-button:hover {
-    background-color: var(--color-tertiary);
-  }
-  
 
-  @media (max-width: 780px) {
-    .card {
-        /* max-width: 182px; */
-        margin: 20px;
-    }
-    .card-title {
-        font-size: 20px;
-        margin: 2px;
-    }
-    .card-description {
-        font-size: 14px;
-    }
+  .categories {
+    flex-grow: 1;
+    
   }
 
-  @media (max-width: 600px) {
-    .card {
-        max-width: 182px;
-        margin: 20px;
-    }
-    .card-title {
-        font-size: 20px;
-        margin: 2px;
-    }
-    .card-description {
-        font-size: 14px;
-    }
+  .price {
+    padding: 15px 0;
   }
 
-.button {
-    display: inline-block;
-    background-color: var(--color-primary);
-    color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 4px;
-    text-decoration: none;
-    font-size: 20px;
-    /* margin-left: auto; */
-    /* align-self: flex-end; */
-}
+  .card-description, .price, .categories {
+    opacity: 0.8;
+    margin: 5px 10px 5px 10px;
 
-.button-center {
-  width: 100%;
-  display:flex;
-  justify-content: center;
-  padding: 30px 0px;
-}
+  }
+
+ 
 
 .buttons a {
   display: inline-block;
-  background-color: var(--color-primary);
+  /* background-color: var(--color-primary); */
   color: #ffffff;
   padding: 10px 20px;
   border-radius: 20px;
@@ -210,11 +166,106 @@ form {
   align-self: flex-end;
 }
 
+.card-button-buy {
+  background-color: var(--color-primary);
+}
+
 .card-button-view {
-  border: 2px solid #ddd;
+  border: 2px solid #dddddda8;
+  background-color: var(--color-tertiary);
 
 }
 
 .buttons a:hover {
   background-color: var(--color-tertiary);
 }
+
+.button {
+  display: inline-block;
+  justify-content: right;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 20px;
+  
+}
+
+
+.button-center {
+width: 100%;
+display:flex;
+justify-content: center;
+padding: 30px 0px;
+margin-top: 100px;
+margin-bottom: 100px;
+}
+  
+  
+  
+  @media (max-width: 1066px) {
+    .card {
+      margin: 20px;
+    }
+    .card-title, .categories, .card-description, .price {
+      margin: 5px 2px;
+    }
+    .card-title {
+        font-size: 20px;
+        
+    }
+    
+  }
+
+  @media (max-width: 780px) {
+    .card {
+        margin: 20px;
+    }
+    
+  }
+
+  @media (max-width: 705px) {
+    .card {
+        max-width: 182px;
+        margin: 20px;
+    }
+    .card-title {
+        font-size: 20px;
+        margin: 2px;
+    }
+    .card-description {
+        display: none;
+    }
+    .content-card {
+      min-height: 205px;
+      padding: 15px;
+    }
+
+    .buttons a {
+      font-size: 14px;
+    }
+
+    .card-img {
+      max-height: 274px;
+      min-height: 274px;
+    }
+  }
+
+  @media (max-width: 544px) {
+    .card {
+        max-width: 182px;
+        margin: 20px 10px;
+    }
+    .card-title {
+        font-size: 18px;
+        margin: 2px;
+    }
+    .card-description {
+        display: none;
+    }
+    main {
+      margin: 10px;
+    }
+  }
+
