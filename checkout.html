@@ -31,10 +31,55 @@
   <main>
       
     
-      <h2>checkout</h2>
+  <h2>checkout</h2>
+  <hr class="checkout-devider">
+    <div class="preview-row">
+      <div class="column">
+        <img src="/assets/images/big-godzilla.jpeg" class="img" alt="preview img of godzilla movie">
+      </div>
 
-      <div class="preview-row">
+      <div class="column">
+        <div class="wrapper">
+          <div class="payment">
 
+          <h3>Payment</h3>
+
+            <div class="form">
+              <div class="card space icon-relative">
+                <label class="label">card holder:</label>
+                <input type="text" class="input" name="card-holder" placeholder="Card Holder">
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <div class="card space icon-relative">
+                <label class="label">card number:</label>
+                <input type="text" class="input" name="card-number" placeholder="Card number">
+                <i class="fa-regular fa-credit-card"></i>
+              </div>
+              <div class="card-grp space icon-relative">
+                <div class="card-item">
+                  <label class="label">Expiry date:</label>
+                  <input type="text" class="input" name="expiry-date" placeholder="00 / 00">
+                  <i class="fa-solid fa-calendar-days"></i>
+                </div>
+                <div class="card-item icon-relative">
+                  <label class="label">CVC:</label>
+                  <input type="text" class="input" name="cvc" placeholder="000">
+                  <i class="fa-solid fa-lock"></i>
+                </div>
+              </div>
+
+            </div>
+            <div class="btn">
+              pay
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- <div class="preview-row"> -->
+<!-- 
         <div class="column">
           <img src="/assets/images/big-godzilla.jpeg" class="img" alt="preview img of godzilla movie">
         </div>
@@ -60,11 +105,11 @@
                   <textarea id="message" name="message" rows="5" required></textarea>
               </div>
             </form>
-          </div>
+          </div> -->
 
           <!-- endre button til en a href tag -->
-          <button type="submit">Send Message</button>
-        </div>
+          <!-- <button type="submit">Send Message</button>
+        </div> -->
 
         
 
