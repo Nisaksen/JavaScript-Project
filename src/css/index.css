@@ -223,14 +223,8 @@ form {
   margin: 0 auto;
   
 }
-/* .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-  }
-   */
-  .card, .card-more {
+
+  .card,  .card-more{
     background-color: var(--color-secondary);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
@@ -257,12 +251,7 @@ form {
     padding: 20px;
     flex-grow: 1;
   }
-  /* .content-card {
-    display: flex;
-    flex-direction: row;
-    padding: 20px;
-  }
-   */
+ 
   .card-title {
     font-size: 24px;
     margin: 10px 10px 10px 10px;
@@ -271,7 +260,6 @@ form {
   .card-description {
     font-size: 16px;
     color: #fff;
-    /* margin: 10px 10px 10px 10px; */
     flex-grow: 1;
     position: relative;
   }
@@ -289,17 +277,68 @@ form {
     margin: 5px 10px 5px 10px;
 
   }
+
   .card-more {
-    opacity: 0.3;
+    background-color: #40404086;
+     position: relative;
+     z-index: 1;
   }
-  
+  .scream {
+    opacity: 0.3;
+    z-index: 2;
+  }
+
+  .top-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-primary);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 20px;
+   z-index: 3;
+    
+}
+
+.top-button:hover {
+  background-color: var(--color-tertiary);
+}
+
+  /* .card-more::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(100, 100, 100, 0.5); /* adjust color and opacity as needed 
+    z-index: 1;
+}
+
+.content-card,
+.card-img,
+.card-title,
+.categories,
+.card-description,
+.price,
+.buttons {
+    position: relative;
+    z-index: 2;
+}
+
+.top-button {
+    position: relative;
+    z-index: 3;
+} */
   .buttons {
    margin: 10px;
   }
   
   .buttons a {
     display: inline-block;
-    /* background-color: var(--color-primary); */
     color: #ffffff;
     padding: 10px 20px;
     border-radius: 20px;
@@ -321,6 +360,7 @@ form {
   
   .buttons a:hover {
     background-color: var(--color-tertiary);
+    opacity: 0.7;
   }
   
   /* @media (max-width: 750px) {

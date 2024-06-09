@@ -29,6 +29,7 @@ main {
     height: auto;
     border-radius: 10px;
     min-width: 288px;
+    margin: 40px;
     
  }
 
@@ -51,7 +52,7 @@ p {
     font-size: 18px;
     max-width: 515px;
     margin: 40px 30px 100px 35px ;
-    line-height: 22px; 
+    line-height: 25px; 
     /* margin-left: 35px; */
 }
 
