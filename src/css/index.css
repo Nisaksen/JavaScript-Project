@@ -15,7 +15,7 @@ main {
   height: 500px;
   min-height: 300;
   border-radius: 20px;
-  background-image: url(/assets/images/sweetheart_card.png);
+  background-image: url(assets/images/sweetheart_card.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top ;
@@ -33,7 +33,7 @@ main {
   height: 500px;
   min-height: 300;
   border-radius: 20px;
-  background-image: url(/assets/images/tyson-moultrie-movie-posters.jpg);
+  background-image: url(assets/images/tyson-moultrie-movie-posters.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
