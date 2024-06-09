@@ -6,8 +6,7 @@
 }
 
 main {
-    /* margin-top: 200px 30px 200px 30px; */
-    /* margin-top: 200px 0 ; */
+    margin: 0 0 200px 0;
     
 }
 
@@ -45,7 +44,7 @@ img {
     border-radius: 20px;
   }
 
-  
+
  img .img {
     max-width: 100%;
     height: auto;
@@ -74,9 +73,7 @@ img {
     font-size: 20px;
 }
 
-hr {
-    /* margin-bottom: 20px; */
-}
+
  .form .label {
     display: block;
     color: white;
@@ -186,7 +183,7 @@ hr {
 
 @media screen and (max-width: 320px) {
     main {
-        margin: 0;
+        margin: 0 0 200px 0;
     }
     img  {
        max-width: 280px;

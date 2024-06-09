@@ -176,7 +176,8 @@ footer .footer-container {
 }
 
 .footer-col img {
-  background:none;
+  max-width: 300px;
+  
 }
 
 .footer-col {
@@ -227,6 +228,7 @@ footer .footer-container {
   font-size: 20px;
   opacity: 0.7;
   max-width: 300px;
+  margin-bottom: 5px;
 }
 
 .footer-col .input-signup {
@@ -270,11 +272,31 @@ hr {
 }
 
 @media (max-width: 425px) {
-  img .footer-logo {
-  max-width: 288px;
-}
+  .footer-col img {
+    max-width: 288px;
+    margin: 0 ;
+  }
+
+  footer .footer-col {
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
  
 }
+
+@media (max-width: 325px) {
+  .footer-col img {
+      max-width: 250px;
+      margin-left: 0px;
+      margin-bottom: 20px;
+  }
+
+  footer .footer-col {
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+}
+
 
 
 
