@@ -25,6 +25,11 @@ main {
   margin: 50px;
 }
 
+breadcrumb-devider{
+  max-width: 1400px;
+  margin: 50px auto;
+  margin-bottom: 50px;
+}
 .logo {
  max-width: 500px;
  min-width: 200;
