@@ -25,6 +25,33 @@ main {
   margin: 50px;
 }
 
+.breadcrumbs {
+  padding: 10px;
+  margin: 20px;
+  
+}
+
+.breadcrumb-items {
+  display: inline-block;
+  border: 2px solid rgba(255, 255, 255, 0.76);
+  padding: 10px 20px;
+  border-radius: 15px;
+  color: rgba(255, 255, 255, 0.445);
+}
+
+.breadcrumb-link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.575);
+}
+
+.breadcrumb-activ {
+  border: 2px solid white;
+  background-color: #6d00d994;
+}
+.breadcrumb-link-activ {
+  color: white;
+}
+
 breadcrumb-devider{
   max-width: 1400px;
   margin: 50px auto;
@@ -87,6 +114,7 @@ header {
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-bottom: 150px;
 
 }
 
