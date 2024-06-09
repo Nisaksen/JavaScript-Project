@@ -15,7 +15,6 @@ main {
     max-width: 1400px;
     margin: 0 auto;
     margin-bottom: 50px;
-    
 }
 
 h2 {
@@ -53,6 +52,9 @@ img {
     margin: 40px 80px;
     
  }
+
+ /* payment container */
+
 .payment {
     background: var(--color-secondary);
     max-width: 360px;
@@ -73,14 +75,12 @@ img {
     font-size: 20px;
 }
 
-
  .form .label {
     display: block;
     color: white;
     margin-bottom: 6px;
     text-align: left;
     opacity: 0.8;
-
  }
 
 .form .input {
@@ -155,18 +155,18 @@ img {
     align-self: flex-end;
   }
   
-  .btn:hover {
+.btn:hover {
     background-color: var(--color-tertiary);
-  }
+}
 
-  @media screen and (max-width: 750px) {
+@media screen and (max-width: 750px) {
     img  {
-       max-width: 400px;
+        max-width: 400px;
     }
-   .payment{
-    margin-left: 25px;
-    margin-right: 25px;
-   }
+    .payment{
+        margin-left: 25px;
+         margin-right: 25px;
+}
 }
 
 @media screen and (max-width: 490px) {
@@ -174,8 +174,8 @@ img {
        max-width: 300px;
     }
    .payment{
-    margin-left: 15px;
-    margin-right: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
    }
 }
 
@@ -189,8 +189,8 @@ img {
        margin-left: 10px;
     }
    .payment{
-    margin-left: 0px;
-    margin-right: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
    }
 }
 
