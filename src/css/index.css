@@ -13,7 +13,6 @@ main {
   width: 100%;
   max-width: 1236px;
   height: 500px;
-  /* min-height: 300px; */
   border-radius: 20px;
   background-image: url('../../assets/images/sweetheart_card.png');
   background-size: cover;
@@ -31,7 +30,6 @@ main {
   width: 100%;
   max-width: 1236px;
   height: 500px;
-  /* min-height: 300px; */
   border-radius: 20px;
   background-image: url('../../assets/images/tyson-moultrie-movie-posters.jpg');
   background-size: cover;
@@ -41,7 +39,7 @@ main {
   margin-top: 100px;
   margin-bottom: 150px;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: -reverse;
 }
 
 
@@ -64,7 +62,7 @@ main {
 }
 
 .banner p, .banner2 p {
-  font-size: 1.2em;
+  font-size: 1.6em;
   max-width: 400px;
   margin-bottom: 20px;
 }
