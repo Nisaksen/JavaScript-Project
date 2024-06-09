@@ -33,7 +33,7 @@ main {
   max-height: 500px;
   min-height: 300px;
   border-radius: 20px;
-  background-image: url(../../assets/images/moviebackground.png);
+  background-image: url('../../assets/images/moviebackground.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
