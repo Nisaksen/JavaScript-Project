@@ -6,7 +6,6 @@ main {
     width: 100%;
     max-width: 1230px;
     height: 700px;
-    min-height: 300;
     margin: 0px auto;
     display: flex;
     justify-content: center;

@@ -87,11 +87,9 @@ img {
     padding: 13px 0 13px 25px;
     width: 100%;
     text-align: center;
-    margin-left: x;
     border: 2px solid #dddddd;
     border-radius: 5px;
     letter-spacing: 1px;
-    word-wrap: 3px;
     outline: none;
     font-size: 16px;
     color: #555555;
@@ -218,21 +216,3 @@ img {
     
 }
 
-/* .img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    min-width: 288px;
-    margin: 40px 80px;
-    
- }
-.payment {
-    background: var(--color-secondary);
-    max-width: 360px;
-    min-width: 288px;
-    padding: 35px;
-    padding-top: 50px;
-    border-radius: 5px;
-    position: relative;
-    margin: 50px 80px;
-} */
