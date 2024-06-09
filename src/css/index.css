@@ -7,7 +7,44 @@ main {
 
 
 /* -------------------contentcard background -----------------*/
+.logo-center {
+  display:flex;
+  justify-content: center;
+  margin: 0 auto;
+}
 
+img .logo {
+  max-width: 700px;
+  min-width: 288px;
+  height: auto;
+  /* display:flex;
+  justify-content: center;
+  margin: 0 auto; */
+  /* max-width: 100%;
+  margin: 30px; */
+ }
+
+ @media (max-width: 1030px) {
+   img {
+  max-width: 600px;
+ }
+  
+ }
+
+ @media (max-width: 670px) {
+  img {
+ max-width: 400px;
+}
+ 
+}
+
+
+@media (max-width: 425px) {
+  img {
+ max-width: 300px;
+}
+ 
+}
 
 .banner {
   width: 100%;

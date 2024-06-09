@@ -21,9 +21,12 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1250px;
-    margin: 0 auto;
+    margin: 50px auto;
   }
-
+img{
+    max-width: 100%;
+    height: auto;
+}
   .img {
     max-width: 100%;
     height: auto;
@@ -32,16 +35,18 @@ main {
     margin: 40px;
     
  }
+.text-container {
+    max-width: 515px;
+}
 
-
-h2 {
+.title {
     font-size: 48px;
     margin: 30px;
     max-width: 450px;
    
 }
 
-h3 {
+.about {
     margin: 30px;
     font-size: 28px;
     margin-left: 35px;
@@ -50,7 +55,7 @@ h3 {
 
 p {
     font-size: 18px;
-    max-width: 515px;
+    /* max-width: 515px; */
     margin: 40px 30px 100px 35px ;
     line-height: 25px; 
     /* margin-left: 35px; */
@@ -79,8 +84,44 @@ p {
     background-color: var(--color-tertiary);
   }
   
-  @media (max-width: 450px) {
-    
+  @media (max-width: 750px) {
+    main {
+        margin: 0;
+    }
+
+    img.img {
+        
+        max-width: 400px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 488px) {
+    main {
+        margin: 0;
+    }
+    img.img {
+        /* margin-right: 30px;
+        margin-left: 30px; */
+        max-width: 380px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+ 
+@media (max-width: 395px) {
+    main {
+        margin: 0;
+    }
+    img.img {
+        /* margin-right: 30px;
+        margin-left: 30px; */
+        max-width: 300px;
+    }
 }
     
 
