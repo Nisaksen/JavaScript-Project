@@ -12,8 +12,8 @@ main {
 .banner {
   width: 100%;
   max-width: 1236px;
-  height: 500px;
-  min-height: 300;
+  max-height: 500px;
+  min-height: 300px;
   border-radius: 20px;
   background-image: url(assets/images/sweetheart_card.png);
   background-size: cover;
@@ -30,10 +30,10 @@ main {
 .banner2 {
   width: 100%;
   max-width: 1236px;
-  height: 500px;
-  min-height: 300;
+  max-height: 500px;
+  min-height: 300px;
   border-radius: 20px;
-  background-image: url(../../assets/images/tyson-moultrie-movie-posters.jpg);
+  background-image: url(../../assets/images/moviebackground.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
