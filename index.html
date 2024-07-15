@@ -1,105 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="This is a website to buy your favourite movies">
-  <title>SquareEyes</title>
-  <link href="src/css/global.css" rel="stylesheet" >
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" >
-  <link href="src/css/index.css" rel="stylesheet" >
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js" crossorigin="anonymous"></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a website to buy your favourite movies"
+    />
+    <title>SquareEyes</title>
+    <link href="src/css/global.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="src/css/index.css" rel="stylesheet" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-  
+  <body>
     <header>
-      
-      <img class="nav_logo" src="assets/images/SquareEyes_Logo11.png" alt="picture of the website logo">
-    
-      <input type="checkbox" id="menu-checkbox">
-      <label  class="hamburger-icon" for="menu-checkbox"><i class="fas fa-bars"></i></label>
+      <img
+        class="nav_logo"
+        src="assets/images/SquareEyes_Logo11.png"
+        alt="picture of the website logo"
+      />
 
-        <nav>
-          <a href="index.html">Home</a> 
-          <a href="movies.html">Movies</a>
-          <a href="contact.html">Contact Us</a>
-          <a href="about-us.html">About Us</a>
-          <a href="contact.html">Recomend a movie</a>
-        </nav>
+      <input type="checkbox" id="menu-checkbox" />
+      <label class="hamburger-icon" for="menu-checkbox"
+        ><i class="fas fa-bars"></i
+      ></label>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="movies.html">Movies</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="about-us.html">About Us</a>
+        <a href="contact.html">Recomend a movie</a>
+      </nav>
     </header>
 
-
-    
-   
-    
-<!--front content cards 1 and 2 with buttons-->
+    <!--front content cards 1 and 2 with buttons-->
     <main>
-
-      <div class="logo-center"> 
-        <div><img class="logo" src="assets/images/SquareEyes_Logo11.png" alt="picture of the website logo"></div>
+      <div class="logo-center">
+        <div>
+          <img
+            class="logo"
+            src="assets/images/SquareEyes_Logo11.png"
+            alt="picture of the website logo"
+          />
+        </div>
       </div>
-    
 
       <div class="banner" title="sweetheart banner">
         <div class="banner-content">
-            <h1>Stream Your Favoruite Movies!</h1>
-            <p>Explore the new movies just published and find a new favorite</p>
-            <a href="movies.html" class="card-button">More...</a>
+          <h1>Stream Your Favoruite Movies!</h1>
+          <p>Explore the new movies just published and find a new favorite</p>
+          <a href="movies.html" class="card-button">More...</a>
         </div>
       </div>
       <div class="banner2" title="movieposter background banner">
         <div class="banner-content">
-            <h1>Discover New Filmmakers!</h1>
-            <p>Support unique and small filmmakers and explore a new genera </p>
-            <a href="movies.html" class="card-button">More...</a>
+          <h1>Discover New Filmmakers!</h1>
+          <p>Support unique and small filmmakers and explore a new genera</p>
+          <a href="movies.html" class="card-button">More...</a>
         </div>
       </div>
-      
 
-<!--searchbar-->
+      <!--searchbar-->
 
-     
+      <div class="search-container">
+        <div class="menu">
+          <a href="movies.html">All Movies</a>
+        </div>
+        <label for="search-bar">search bar</label>
+        <input
+          type="text"
+          placeholder="Search a movie..."
+          id="search-bar"
+          label="search bar"
+        />
+        <button href="index.html" type="submit" id="search-button">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
 
-        <div class="search-container">
-        
-          <div class="menu">
-            <a href="movies.html">All Movies</a>
-          </div> 
-            <label for="search-bar">search bar</label>
-            <input type="text" placeholder="Search a movie..." id="search-bar" label="search bar" >
-            <button href="index.html" type="submit" id="search-button"><i class="fas fa-search"></i></button>
-        </div> 
-
-
-
-
-<!--contentcards og buttons-->
+      <!--contentcards og buttons-->
       <section>
-
         <div class="card-container">
           <div class="card">
-            <img src="assets/images/godzilla-cover.jpeg" alt="godzilla moviecard" class="card-img">
+            <img
+              src="assets/images/godzilla-cover.jpeg"
+              alt="godzilla moviecard"
+              class="card-img"
+            />
             <div class="content-card">
               <h2 class="card-title">Godzilla: The king of monsters</h2>
-              <hr>
+              <hr />
               <p class="categories">action</p>
-              <p class="card-description">Godzilla: King of the Monsters is an action-packed monster film that follows the story of....</p>
+              <p class="card-description">
+                Godzilla: King of the Monsters is an action-packed monster film
+                that follows the story of....
+              </p>
               <p class="price">139kr</p>
-                <div class="buttons">
-                  <a href="video-preview.html" class="card-button-view">View</a>
-                  <a href="checkout.html" class="card-button-buy">Buy</a>
-                </div>
+              <div class="buttons">
+                <a href="video-preview.html" class="card-button-view">View</a>
+                <a href="checkout.html" class="card-button-buy">Buy</a>
+              </div>
             </div>
           </div>
           <div class="card" id="toystory">
-            <img src="assets/images/toystory-cover.jpeg" alt="toy story moviecard" class="card-img">
+            <img
+              src="assets/images/toystory-cover.jpeg"
+              alt="toy story moviecard"
+              class="card-img"
+            />
             <div class="content-card">
               <h2 class="card-title">Toy Story 4</h2>
-              <hr>
+              <hr />
               <p class="categories">action</p>
-              <p class="card-description">When a new toy called "Forky" joins Woody and the gang, a road trip alongside old and ...</p>
+              <p class="card-description">
+                When a new toy called "Forky" joins Woody and the gang, a road
+                trip alongside old and ...
+              </p>
               <p class="price">139kr</p>
               <div class="buttons">
                 <a href="video-preview.html" class="card-button-view">View</a>
@@ -108,12 +137,19 @@
             </div>
           </div>
           <div class="card" id="batman">
-            <img src="assets/images/batman-cover.jpeg" alt="batman moviecard" class="card-img">
+            <img
+              src="assets/images/batman-cover.jpeg"
+              alt="batman moviecard"
+              class="card-img"
+            />
             <div class="content-card">
               <h2 class="card-title">Batman</h2>
-              <hr>
+              <hr />
               <p class="categories">action</p>
-              <p class="card-description">When a sadistic serial killer begins murdering key political figures in Gotham, Batman...</p>
+              <p class="card-description">
+                When a sadistic serial killer begins murdering key political
+                figures in Gotham, Batman...
+              </p>
               <p class="price">139kr</p>
               <div class="buttons">
                 <a href="video-preview.html" class="card-button-view">View</a>
@@ -121,86 +157,108 @@
               </div>
             </div>
           </div>
-          
-            
-            <div class="card-more" id="scream">
-              <a href="movies.html" class=" top-button">More...</a>
-                <img src="assets/images/scream-cover.jpeg" alt="scream moviecard" class="card-img scream">
-                <div class="content-card scream">
-                  <h2 class="card-title">Scream</h2>
-                    <hr>
-                    <p class="categories scream">Horror, Thriler</p>
-                    <p class="card-description scream">25 years after a streak of brutal murders shocked the quiet town of Woodsboro, Calif., a ...</p>
-                    <p class="price">139kr</p>
-                    <div class="buttons scream">
-                      <a href="video-preview.html" class="card-button-view">View</a>
-                      <a href="checkout.html" class="card-button-buy">Buy</a>
-                    </div>
-                </div>
-            </div>
-          
-        </div>
 
+          <div class="card-more" id="scream">
+            <a href="movies.html" class="top-button">More...</a>
+            <img
+              src="assets/images/scream-cover.jpeg"
+              alt="scream moviecard"
+              class="card-img scream"
+            />
+            <div class="content-card scream">
+              <h2 class="card-title">Scream</h2>
+              <hr />
+              <p class="categories scream">Horror, Thriler</p>
+              <p class="card-description scream">
+                25 years after a streak of brutal murders shocked the quiet town
+                of Woodsboro, Calif., a ...
+              </p>
+              <p class="price">139kr</p>
+              <div class="buttons scream">
+                <a href="video-preview.html" class="card-button-view">View</a>
+                <a href="checkout.html" class="card-button-buy">Buy</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
+    <!--footer -->
 
-  <!--footer -->
-  
-  <footer>
-    <div class="footer-container">
-      <div class="row">
-
-        <div class="footer-col">
-          <img src="assets/images/SquareEyes_Logo11.png" class="footer-logo" alt="picture of logo">
-        </div>
-        <hr class="divider">
-        <div class="footer-col">
-          <h4>Quick Links</h4>
+    <footer>
+      <div class="footer-container">
+        <div class="row">
+          <div class="footer-col">
+            <img
+              src="assets/images/SquareEyes_Logo11.png"
+              class="footer-logo"
+              alt="picture of logo"
+            />
+          </div>
+          <hr class="divider" />
+          <div class="footer-col">
+            <h4>Quick Links</h4>
             <ul class="list">
               <li><a href="index.html">Home</a></li>
               <li><a href="about-us.html">About Us</a></li>
               <li><a href="contact.html">Contact Us</a></li>
               <li><a href="contact.html">Recomend a movie</a></li>
             </ul>
+          </div>
+
+          <hr class="divider" />
+
+          <div class="footer-col">
+            <h4>Follow Us</h4>
+            <ul class="social-list">
+              <li>
+                <a href="index.html" aria-label="instagram link"
+                  ><i class="fa-brands fa-square-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="index.html" aria-label="tik tok link"
+                  ><i class="fa-brands fa-tiktok"></i
+                ></a>
+              </li>
+              <li>
+                <a href="index.html" aria-label="twitter link"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+
+          <hr class="divider" />
+
+          <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p>
+              Sign to our newsletter for movie recommendations, special offers
+              and more!
+            </p>
+            <form action="name">
+              <label for="email-input">Email:</label>
+              <input
+                type="email"
+                placeholder="Your email"
+                class="input-email"
+              />
+              <label for="submit">submit</label>
+              <input type="submit" value="signup" class="input-signup" />
+            </form>
+          </div>
         </div>
 
-      <hr class="divider">
+        <hr />
 
-        <div class="footer-col">
-          <h4>Follow Us</h4>
-          <ul class="social-list">
-            <li><a href="index.html" aria-label="instagram link"><i class="fa-brands fa-square-instagram"></i></a></li>
-            <li><a href="index.html" aria-label="tik tok link"><i class="fa-brands fa-tiktok"></i></a></li>
-            <li><a href="index.html" aria-label="twitter link"><i class="fa-brands fa-twitter"></i></a></li>
-          </ul>
-        </div>
-
-        <hr class="divider">
-
-        <div class="footer-col">
-          <h4>Newsletter</h4>
-          <p>Sign to our newsletter for movie recommendations, special offers and more!</p>
-          <form action="name">
-            <label for="email-input">Email:</label>
-            <input type="email" placeholder="Your email" class="input-email">
-            <label for="submit">submit</label>
-            <input type="submit" value="signup" class="input-signup"> 
-          </form>
+        <div class="row">
+          <div class="col">
+            <p>&#169; 2024 SquareEyes. All rights Reserved</p>
+          </div>
         </div>
       </div>
-
-      <hr>
-
-      <div class="row">
-        <div class="col">
-          <p>&#169; 2024 SquareEyes. All rights Reserved</p>
-        </div>
-      </div>
-    </div>
-    
-  </footer>
- 
-
-</body>
+    </footer>
+  </body>
 </html>

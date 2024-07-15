@@ -1,15 +1,11 @@
-
 main {
   box-sizing: border-box;
   margin-bottom: 200px;
 }
 
-
-
-
 /* -------------------contentcard background -----------------*/
 .logo-center {
-  display:flex;
+  display: flex;
   justify-content: center;
   margin: 0 auto;
 }
@@ -18,24 +14,24 @@ img .logo {
   max-width: 700px;
   min-width: 288px;
   height: auto;
- }
-
- @media (max-width: 1030px) {
-   img {
-  max-width: 600px;
- }
- }
-
- @media (max-width: 670px) {
-  img {
- max-width: 400px;
 }
+
+@media (max-width: 1030px) {
+  img {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 670px) {
+  img {
+    max-width: 400px;
+  }
 }
 
 @media (max-width: 425px) {
   img {
- max-width: 300px;
-}
+    max-width: 300px;
+  }
 }
 /* -------------------contentcard background -----------------*/
 .banner {
@@ -43,16 +39,15 @@ img .logo {
   max-width: 1236px;
   height: 500px;
   border-radius: 20px;
-  background-image: url('../../assets/images/sweetheart_card.png');
+  background-image: url("../../assets/images/sweetheart_card.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top ;
+  background-position: top;
   margin: 40px auto;
   margin-top: 100px;
   margin-bottom: 150px;
   display: flex;
   flex-direction: column;
-  
 }
 
 .banner2 {
@@ -60,7 +55,7 @@ img .logo {
   max-width: 1236px;
   height: 500px;
   border-radius: 20px;
-  background-image: url('../../assets/images/tyson-moultrie-movie-posters.jpg');
+  background-image: url("../../assets/images/tyson-moultrie-movie-posters.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -71,27 +66,27 @@ img .logo {
   flex-direction: -reverse;
 }
 
-
 .banner-content {
-  max-width: 800px; 
+  max-width: 800px;
   margin-left: 30px;
   margin-top: 30px;
   margin-right: auto;
   justify-content: space-around;
 }
 
-.banner  h1, .banner2 h1 {
+.banner h1,
+.banner2 h1 {
   font-size: 3em;
   max-width: 500px;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
-.banner p, .banner2 p {
+.banner p,
+.banner2 p {
   font-size: 1.6em;
   max-width: 400px;
   margin-bottom: 20px;
 }
-
 
 .card-button {
   display: inline-block;
@@ -105,51 +100,52 @@ img .logo {
   align-self: flex-end;
 }
 
-
-
 .card-button:hover {
   background-color: var(--color-tertiary);
 }
 
 @media (max-width: 1200px) {
-  .banner, .banner2 {
+  .banner,
+  .banner2 {
     max-width: 1100px;
-    margin: 0px auto; 
+    margin: 0px auto;
     margin-top: 60px;
   }
 }
 
 @media (max-width: 768px) {
-  .banner, .banner2 {
+  .banner,
+  .banner2 {
     height: 400px;
-   
   }
-  .banner h1, .banner2 h1 {
+  .banner h1,
+  .banner2 h1 {
     font-size: 2em;
     max-width: 400px;
   }
-  .banner p, .banner2 p {
+  .banner p,
+  .banner2 p {
     font-size: 1em;
-    max-width: 300px; 
+    max-width: 300px;
   }
 }
 
 @media (max-width: 500px) {
-  .banner, .banner2 {
-    height: 300px; 
+  .banner,
+  .banner2 {
+    height: 300px;
   }
-  .banner h1, .banner2 h1 {
+  .banner h1,
+  .banner2 h1 {
     font-size: 1.5em;
     max-width: 200px;
-    
   }
-  .banner p, .banner2 p {
-    font-size: 0.9em; 
+  .banner p,
+  .banner2 p {
+    font-size: 0.9em;
     max-width: 150px;
   }
 }
- 
-
 
 /* --------------------------searchbar -----------------------*/
 .search-container {
@@ -165,12 +161,12 @@ img .logo {
   margin-top: 100px;
 }
 
-.menu{
-width: 65%;
-display: flex;
-justify-content: left;
-margin-left: 50px;
-color: #fff;
+.menu {
+  width: 65%;
+  display: flex;
+  justify-content: left;
+  margin-left: 50px;
+  color: #fff;
 }
 
 .menu a {
@@ -194,7 +190,6 @@ form {
   margin-left: 5px;
 }
 
-
 #search-button {
   color: white;
   border: none;
@@ -209,7 +204,7 @@ form {
 #search-button:hover {
   background-color: var(--color-tertiary);
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .menu {
     margin-left: 12px;
     font-size: 0.9rem;
@@ -220,8 +215,6 @@ form {
 }
 /* --------------------------searchbar -----------------------*/
 
-
-
 /* ----------------------contentcards movies--------------------- */
 .card-container {
   display: flex;
@@ -231,7 +224,8 @@ form {
   margin: 0 auto;
 }
 
-.card,  .card-more{
+.card,
+.card-more {
   background-color: var(--color-secondary);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
@@ -272,22 +266,24 @@ form {
 }
 
 .categories {
-  flex-grow: 1; 
+  flex-grow: 1;
 }
 
 .price {
   padding: 15px 0;
 }
 
-.card-description, .price, .categories {
+.card-description,
+.price,
+.categories {
   opacity: 0.8;
   margin: 5px 10px 5px 10px;
 }
 
 .card-more {
   background-color: #40404086;
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 .scream {
   opacity: 0.3;
@@ -309,7 +305,7 @@ form {
 }
 
 .top-button:hover {
-background-color: var(--color-tertiary);
+  background-color: var(--color-tertiary);
 }
 
 .buttons {
@@ -328,13 +324,12 @@ background-color: var(--color-tertiary);
 }
 
 .card-button-buy {
-background-color: var(--color-primary);
+  background-color: var(--color-primary);
 }
 
 .card-button-view {
-border: 2px solid #dddddda8;
-background-color: var(--color-tertiary);
-
+  border: 2px solid #dddddda8;
+  background-color: var(--color-tertiary);
 }
 
 .buttons a:hover {
@@ -342,11 +337,10 @@ background-color: var(--color-tertiary);
   opacity: 0.7;
 }
 
-
 @media (max-width: 1310px) {
   #batman {
     display: none;
-  } 
+  }
 }
 @media (max-width: 1007px) {
   #toystory {
@@ -354,37 +348,38 @@ background-color: var(--color-tertiary);
   }
 }
 
-
 @media (max-width: 1066px) {
   .card {
     margin: 20px;
   }
-  .card-title, .categories, .card-description, .price {
+  .card-title,
+  .categories,
+  .card-description,
+  .price {
     margin: 5px 2px;
   }
   .card-title {
-      font-size: 20px;  
+    font-size: 20px;
   }
 }
 
 @media (max-width: 780px) {
   .card {
-      margin: 20px;
+    margin: 20px;
   }
-  
 }
 
 @media (max-width: 705px) {
   .card {
-      max-width: 182px;
-      margin: 20px;
+    max-width: 182px;
+    margin: 20px;
   }
   .card-title {
-      font-size: 20px;
-      margin: 2px;
+    font-size: 20px;
+    margin: 2px;
   }
   .card-description {
-      display: none;
+    display: none;
   }
   .content-card {
     min-height: 205px;
@@ -403,18 +398,17 @@ background-color: var(--color-tertiary);
 
 @media (max-width: 544px) {
   .card {
-      max-width: 182px;
-      margin: 20px 10px;
+    max-width: 182px;
+    margin: 20px 10px;
   }
   .card-title {
-      font-size: 18px;
-      margin: 2px;
+    font-size: 18px;
+    margin: 2px;
   }
   .card-description {
-      display: none;
+    display: none;
   }
   main {
     margin: 10px;
   }
 }
-
