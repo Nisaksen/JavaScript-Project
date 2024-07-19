@@ -41,8 +41,9 @@
         <a href="contact.html">Recomend a movie</a>
       </nav>
     </header>
+
     <main>
-      <div title="breadcrumb">
+      <section title="breadcrumb">
         <ul class="breadcrumbs">
           <li class="breadcrumb-items">
             <a href="index.html" class="breadcrumb-link">Home</a>
@@ -61,86 +62,91 @@
             >
           </li>
         </ul>
-      </div>
+      </section>
 
       <hr class="breadcrumb-devider" />
-      <h2>checkout</h2>
 
-      <div class="preview-row">
-        <div class="column">
-          <img
-            src="assets/images/godzilla-cover.jpeg"
-            class="img"
-            alt="preview img of godzilla movie"
-          />
-        </div>
+      <section>
+        <h2>checkout</h2>
 
-        <div class="column">
-          <div class="wrapper">
-            <div class="payment">
-              <h3>Payment</h3>
-              <hr />
+        <div class="preview-row">
+          <div class="column">
+            <img
+              src="assets/images/godzilla-cover.jpeg"
+              class="img"
+              alt="preview img of godzilla movie"
+            />
+          </div>
 
-              <div class="form">
-                <div class="card space icon-relative">
-                  <label class="label" for="card-holder">card holder:</label>
-                  <input
-                    type="text"
-                    class="input"
-                    name="card-holder"
-                    placeholder="Card Holder"
-                  />
-                  <i class="fa-solid fa-user"></i>
-                </div>
-                <div class="card space icon-relative">
-                  <label class="label" for="card-number">card number:</label>
-                  <input
-                    type="text"
-                    class="input"
-                    name="card-number"
-                    placeholder="Card number"
-                  />
-                  <i class="fa-regular fa-credit-card"></i>
-                </div>
-                <div class="card-grp space icon-relative">
-                  <div class="card-item">
-                    <label class="label" for="expiry-date">Expiry date:</label>
+          <div class="column">
+            <div class="wrapper">
+              <div class="payment">
+                <h3>Payment</h3>
+                <hr />
+
+                <div class="form">
+                  <div class="card space icon-relative">
+                    <label class="label" for="card-holder">card holder:</label>
                     <input
                       type="text"
                       class="input"
-                      name="expiry-date"
-                      placeholder="00 / 00"
+                      name="card-holder"
+                      placeholder="Card Holder"
                     />
-                    <i class="fa-solid fa-calendar-days"></i>
+                    <i class="fa-solid fa-user"></i>
                   </div>
-                  <div class="card-item icon-relative">
-                    <label class="label" for="cvc">CVC:</label>
+                  <div class="card space icon-relative">
+                    <label class="label" for="card-number">card number:</label>
                     <input
                       type="text"
                       class="input"
-                      name="cvc"
-                      placeholder="000"
+                      name="card-number"
+                      placeholder="Card number"
                     />
-                    <i class="fa-solid fa-lock"></i>
+                    <i class="fa-regular fa-credit-card"></i>
+                  </div>
+                  <div class="card-grp space icon-relative">
+                    <div class="card-item">
+                      <label class="label" for="expiry-date"
+                        >Expiry date:</label
+                      >
+                      <input
+                        type="text"
+                        class="input"
+                        name="expiry-date"
+                        placeholder="00 / 00"
+                      />
+                      <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <div class="card-item icon-relative">
+                      <label class="label" for="cvc">CVC:</label>
+                      <input
+                        type="text"
+                        class="input"
+                        name="cvc"
+                        placeholder="000"
+                      />
+                      <i class="fa-solid fa-lock"></i>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="order-sum-container">
-            <p class="summary">Godzilla: King of monsters</p>
-            <hr />
-            <p class="sum">139kr</p>
-          </div>
-          <div class="btn">
-            <a href="checkout-success.html" class="card-button-pay">pay</a>
+            <div class="order-sum-container">
+              <p class="summary">Godzilla: King of monsters</p>
+              <hr />
+              <p class="sum">139kr</p>
+            </div>
+            <div class="btn">
+              <a href="checkout-success.html" class="card-button-pay">pay</a>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
 
     <footer>
-      <div class="footer-container">
+      <section class="footer-container">
         <div class="row">
           <div class="footer-col">
             <img
@@ -210,7 +216,7 @@
             <p>&#169; 2024 SquareEyes. All rights Reserved</p>
           </div>
         </div>
-      </div>
+      </section>
     </footer>
   </body>
 </html>
