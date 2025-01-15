@@ -1,5 +1,4 @@
-
-const movies = [
+export const movies = [
   {
     id: "1",
     title: "Godzilla: The King of Monsters",
@@ -77,8 +76,6 @@ function renderMovies(movieList) {
   const container = document.querySelector(".card-container");
   container.innerHTML = ""; // Clear existing content
 
-  
-
   movieList.forEach((movie) => {
     const movieCard = `
         <div class="card">
@@ -101,32 +98,33 @@ function renderMovies(movieList) {
       </div>
       `;
 
-   
     container.innerHTML += movieCard;
   });
- // "Add to Basket" Button Event Listeners
- const addButtons = document.querySelectorAll(".add-to-basket-button");
- addButtons.forEach((button) => {
-   button.addEventListener("click", (event) => {
-     const movieId = event.target.getAttribute("data-id");
-     addToBasket(movieId);
-   });
- });
+
+  // "Add to Basket" Button Event Listeners
+  // const addButtons = document.querySelectorAll(".add-to-basket-button");
+  // addButtons.forEach((button) => {
+  //   button.addEventListener("click", (event) => {
+  //     const movieId = event.target.getAttribute("data-id");
+  //     addToBasket(movieId);
+  //   });
+  // });
 }
 
 // Search Functionality
 document.addEventListener("DOMContentLoaded", () => {
- const searchInput = document.getElementById("search-item");
+  const searchInput = document.getElementById("search-item");
 
- searchInput.addEventListener("input", (event) => {
-   const searchTerm = event.target.value.toLowerCase();
-   const filteredMovies = movies.filter((movie) =>
-     movie.title.toLowerCase().includes(searchTerm) ||
-     movie.genre.toLowerCase().includes(searchTerm)
-   );
+  searchInput.addEventListener("input", (event) => {
+    const searchTerm = event.target.value.toLowerCase();
+    const filteredMovies = movies.filter(
+      (movie) =>
+        movie.title.toLowerCase().includes(searchTerm) ||
+        movie.genre.toLowerCase().includes(searchTerm)
+    );
 
-   renderMovies(filteredMovies);
- });
+    renderMovies(filteredMovies);
+  });
 
- renderMovies(movies);
+  renderMovies(movies);
 });

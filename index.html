@@ -100,6 +100,17 @@
       <div class="shopping-cart-icon" id="cart-icon">
         🛒<span id="cart-count">0</span>
       </div>
+
+      <!-- Shopping Cart Sidebar -->
+      <div class="shopping-cart-sidebar" id="cart-sidebar">
+        <button class="close-btn" id="close-cart">✖</button>
+        <h2>Your Basket</h2>
+        <div id="cart-items"></div>
+        <div class="cart-footer">
+          <p>Total: <span id="cart-total">0</span>kr</p>
+          <button id="purchase-btn">Go to Purchase Page</button>
+        </div>
+      </div>
     </main>
 
     <!--footer -->
@@ -184,7 +195,8 @@
         </div>
       </section>
     </footer>
-    <script src="js/movies.js" defer></script>
+    <script type="module" src="js/movies.js" defer></script>
+    <script type="module" src="js/shoppingcart.js" defer></script>
     <script src="js/api.js" defer></script>
   </body>
 </html>
